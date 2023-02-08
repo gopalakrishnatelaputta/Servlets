@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>send_Redirect</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Search_link</display-name>
+    <servlet-name>Search_link</servlet-name>
+    <servlet-class>sendredirect.Search_link</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search_link</servlet-name>
+    <url-pattern>/Search_link</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>My_searcher</display-name>
+    <servlet-name>My_searcher</servlet-name>
+    <servlet-class>sendredirect.My_searcher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>My_searcher</servlet-name>
+    <url-pattern>/My_searcher</url-pattern>
+  </servlet-mapping>
+</web-app>
